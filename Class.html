@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        .abc{
+            color:red;
+        }
+        #xyz{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is having red color text</h1>
+    <p>This is having blue color text</p>
+    <script>
+        var head=document.querySelector("h1");
+        head.classList="abc";
+        var para=document.querySelector("p");
+        para.setAttribute("id", "xyz");
+        console.log(para.getAttribute("id"));
+    </script>
+</body>
+</html>

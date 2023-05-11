@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show and Hidden</title>
+</head>
+<body>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="show" id="btn" onclick="show()">
+    <script>
+        var pswd=document.querySelector("#password");
+        var btn=document.querySelector("#btn");
+        function show(){
+            if(pswd.type=="password"){
+                pswd.type="text";
+                btn.value="Hide";
+            }else{
+                pswd.type="password";
+                btn.value="Show";
+            }
+        }
+    </script>
+</body>
+</html>

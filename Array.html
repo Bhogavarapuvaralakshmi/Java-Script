@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var array=['a','b','c','d','e'];
+        document.write(array+"<br>");
+        // indexing
+        document.write(array[2]+"<br>");
+        // adding value
+        array.push("f");
+        document.write(array+"<br>");
+        array.unshift("g");
+        document.write(array+"<br>");
+        // removing the values
+        array.pop("f");
+        document.write(array+"<br>");
+        array.shift("g");
+        document.write(array+="<br>");
+        // replacing value
+        array[0]="v";
+        document.write(array+"<br>");
+        var arr=['f','g','h'];
+        document.write(arr+"<br>");
+        var arr2=array.concat(arr);
+        document.write(arr2+"<br>");
+    </script>
+</body>
+</html>
